@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: GHndcV/VBUIxpqKKA0CzXFPWI4QZ1Q5GF4w+uh+vLhozZrdroKPu0y4gr+0E5oLViogrgDEIi9Q8sZFdk8QpC0C/TZuMZWbKzaPJFhd56oUA6dX9U7Bf5VQZukk8AHBDOXTApUmYyFqCjJ8HCON0gz+/oljJ64G3fcL0Z4Ua+LyhvZplhEOjF67GNgMejI9bdwMMwTgkESpJeAuIa3PNzl+25u+KgZ3LyKEy+0VR/zieMu8l2N67XV8mGWav2PLznByZoyjbfAK/kuiIs6JvV2z3dV0OnQYTtBE6ipsOgWJYc5MBaOWKqyKP4uB5eA9kLCu/Q6jkstCuXR0+3iK/9m6IDzunM61qmR1a9Qp+NVn3NwrVcA8x7SdQHg3E8BzNl3Lcj5pdrctpTjPsJqT8qhtIG1k9RMkySBjSXoIpkM0tD9FLGaFA4kVCN4d+8qBfRjjcQYC4jIsOep03c1hAZl3qVB3YD6olwONsrAGfhhK4Kcg6b0kA3pP7SqTst0yN93MbhpDexNXEnzTwp4UkPHbw7Vqt44NF9YAjLBtlnKKgT+XZiqV+axSlLAzspEt6hXGp99u7OLXDDGpcVIRAXT95/2SmlrszSFI2rbR1yn9uj6bs7/1sLsXVFRHw5q8iuSECN9dNlmMIKTifyCGd1v8PQowkm82bOfCDQ8/O0oc=
+  app: lit-tor-33514
+  on:
+    repo: catperez81/react-trello-testing
